@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2B8B39491D43EA1900857DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39481D43EA1900857DA7 /* AppDelegate.swift */; };
-		2B8B394B1D43EA1900857DA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B394A1D43EA1900857DA7 /* ViewController.swift */; };
 		2B8B394E1D43EA1900857DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B394C1D43EA1900857DA7 /* Main.storyboard */; };
 		2B8B39501D43EA1900857DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B394F1D43EA1900857DA7 /* Assets.xcassets */; };
 		2B8B39531D43EA1900857DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39511D43EA1900857DA7 /* LaunchScreen.storyboard */; };
 		2B8B395E1D43EA1900857DA7 /* iMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B395D1D43EA1900857DA7 /* iMessageTests.swift */; };
 		2B8B39691D43EA1900857DA7 /* iMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39681D43EA1900857DA7 /* iMessageUITests.swift */; };
+		2B8B397A1D43ED1300857DA7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39791D43ED1300857DA7 /* LogInViewController.swift */; };
+		2B8B397C1D43ED3D00857DA7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B397B1D43ED3D00857DA7 /* SignUpViewController.swift */; };
+		2B8B397E1D43EDAE00857DA7 /* RoomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B397D1D43EDAE00857DA7 /* RoomCollectionViewController.swift */; };
+		2B8B39821D43EEE500857DA7 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39811D43EEE500857DA7 /* ProfileTableViewController.swift */; };
+		2B8B39841D43F1D300857DA7 /* CreateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39831D43F1D300857DA7 /* CreateRoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		2B8B39451D43EA1900857DA7 /* iMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8B39481D43EA1900857DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B8B394A1D43EA1900857DA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B8B394D1D43EA1900857DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B8B394F1D43EA1900857DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8B39521D43EA1900857DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		2B8B39641D43EA1900857DA7 /* iMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8B39681D43EA1900857DA7 /* iMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageUITests.swift; sourceTree = "<group>"; };
 		2B8B396A1D43EA1900857DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B8B39791D43ED1300857DA7 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2B8B397B1D43ED3D00857DA7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2B8B397D1D43EDAE00857DA7 /* RoomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewController.swift; sourceTree = "<group>"; };
+		2B8B39811D43EEE500857DA7 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		2B8B39831D43F1D300857DA7 /* CreateRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,8 @@
 		2B8B39471D43EA1900857DA7 /* iMessage */ = {
 			isa = PBXGroup;
 			children = (
+				2B8B39761D43ECD100857DA7 /* View Controller */,
 				2B8B39481D43EA1900857DA7 /* AppDelegate.swift */,
-				2B8B394A1D43EA1900857DA7 /* ViewController.swift */,
 				2B8B394C1D43EA1900857DA7 /* Main.storyboard */,
 				2B8B394F1D43EA1900857DA7 /* Assets.xcassets */,
 				2B8B39511D43EA1900857DA7 /* LaunchScreen.storyboard */,
@@ -123,6 +131,18 @@
 				2B8B396A1D43EA1900857DA7 /* Info.plist */,
 			);
 			path = iMessageUITests;
+			sourceTree = "<group>";
+		};
+		2B8B39761D43ECD100857DA7 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B8B39791D43ED1300857DA7 /* LogInViewController.swift */,
+				2B8B397B1D43ED3D00857DA7 /* SignUpViewController.swift */,
+				2B8B397D1D43EDAE00857DA7 /* RoomCollectionViewController.swift */,
+				2B8B39811D43EEE500857DA7 /* ProfileTableViewController.swift */,
+				2B8B39831D43F1D300857DA7 /* CreateRoomViewController.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +213,7 @@
 				TargetAttributes = {
 					2B8B39441D43EA1900857DA7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D8NKECE24F;
 					};
 					2B8B39581D43EA1900857DA7 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,7 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8B394B1D43EA1900857DA7 /* ViewController.swift in Sources */,
+				2B8B39821D43EEE500857DA7 /* ProfileTableViewController.swift in Sources */,
+				2B8B39841D43F1D300857DA7 /* CreateRoomViewController.swift in Sources */,
+				2B8B397C1D43ED3D00857DA7 /* SignUpViewController.swift in Sources */,
+				2B8B397E1D43EDAE00857DA7 /* RoomCollectionViewController.swift in Sources */,
+				2B8B397A1D43ED1300857DA7 /* LogInViewController.swift in Sources */,
 				2B8B39491D43EA1900857DA7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.edward..iMessage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edward.iMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.edward..iMessage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edward.iMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +513,7 @@
 				2B8B396F1D43EA1900857DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B8B39701D43EA1900857DA7 /* Build configuration list for PBXNativeTarget "iMessageTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +522,7 @@
 				2B8B39721D43EA1900857DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B8B39731D43EA1900857DA7 /* Build configuration list for PBXNativeTarget "iMessageUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +531,7 @@
 				2B8B39751D43EA1900857DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
