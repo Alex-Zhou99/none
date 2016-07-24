@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        
+        UINavigationBar.appearance().barTintColor = .blackColor()
+        UINavigationBar.appearance().tintColor = .whiteColor()//bar上左右图标颜色
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent//状态栏设置为白色，默认为黑色
+        
+        let font = UIFont(name: "Pokemon", size: 18)
+        //NSForegroundColorAttributeName设置文字颜色
+        if let font = font {   //这句根本不运行
+            print("dfas")
+            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font,NSForegroundColorAttributeName: UIColor.whiteColor()]
+        }
+        
+        
+        
         return true
     }
 

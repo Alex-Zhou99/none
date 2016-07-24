@@ -18,6 +18,37 @@
 		2B8B397E1D43EDAE00857DA7 /* RoomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B397D1D43EDAE00857DA7 /* RoomCollectionViewController.swift */; };
 		2B8B39821D43EEE500857DA7 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39811D43EEE500857DA7 /* ProfileTableViewController.swift */; };
 		2B8B39841D43F1D300857DA7 /* CreateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39831D43F1D300857DA7 /* CreateRoomViewController.swift */; };
+		2B8B39A91D43F6AB00857DA7 /* chatBubbler.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B398B1D43F6AB00857DA7 /* chatBubbler.png */; };
+		2B8B39AA1D43F6AB00857DA7 /* chatBubbler@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B398C1D43F6AB00857DA7 /* chatBubbler@2x.png */; };
+		2B8B39AB1D43F6AB00857DA7 /* chatBubbler@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B398D1D43F6AB00857DA7 /* chatBubbler@3x.png */; };
+		2B8B39AC1D43F6AB00857DA7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B398E1D43F6AB00857DA7 /* Contents.json */; };
+		2B8B39AD1D43F6AB00857DA7 /* chatBubblerOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39901D43F6AB00857DA7 /* chatBubblerOut.png */; };
+		2B8B39AE1D43F6AB00857DA7 /* chatBubblerOut@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39911D43F6AB00857DA7 /* chatBubblerOut@2x.png */; };
+		2B8B39AF1D43F6AB00857DA7 /* chatBubblerOut@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39921D43F6AB00857DA7 /* chatBubblerOut@3x.png */; };
+		2B8B39B01D43F6AB00857DA7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39931D43F6AB00857DA7 /* Contents.json */; };
+		2B8B39B11D43F6AB00857DA7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39951D43F6AB00857DA7 /* 1.png */; };
+		2B8B39B21D43F6AB00857DA7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39961D43F6AB00857DA7 /* 2.png */; };
+		2B8B39B31D43F6AB00857DA7 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39971D43F6AB00857DA7 /* 3.png */; };
+		2B8B39B41D43F6AB00857DA7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39981D43F6AB00857DA7 /* Contents.json */; };
+		2B8B39B51D43F6AB00857DA7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B399A1D43F6AB00857DA7 /* Contents.json */; };
+		2B8B39B61D43F6AB00857DA7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B399B1D43F6AB00857DA7 /* logo.png */; };
+		2B8B39B71D43F6AB00857DA7 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B399C1D43F6AB00857DA7 /* logo@2x.png */; };
+		2B8B39B81D43F6AB00857DA7 /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B399D1D43F6AB00857DA7 /* logo@3x.png */; };
+		2B8B39B91D43F6AB00857DA7 /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B399E1D43F6AB00857DA7 /* photo1.jpg */; };
+		2B8B39BA1D43F6AB00857DA7 /* photo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B399F1D43F6AB00857DA7 /* photo2.jpg */; };
+		2B8B39BB1D43F6AB00857DA7 /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39A01D43F6AB00857DA7 /* photo3.jpg */; };
+		2B8B39BC1D43F6AB00857DA7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39A21D43F6AB00857DA7 /* Contents.json */; };
+		2B8B39BD1D43F6AB00857DA7 /* profileImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39A31D43F6AB00857DA7 /* profileImage.png */; };
+		2B8B39BE1D43F6AB00857DA7 /* profileImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39A41D43F6AB00857DA7 /* profileImage@2x.png */; };
+		2B8B39BF1D43F6AB00857DA7 /* profileImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39A51D43F6AB00857DA7 /* profileImage@3x.png */; };
+		2B8B39C01D43F6AB00857DA7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39A71D43F6AB00857DA7 /* Contents.json */; };
+		2B8B39C11D43F6AB00857DA7 /* user_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39A81D43F6AB00857DA7 /* user_menu.png */; };
+		2B8B39C31D4404F900857DA7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39C21D4404F900857DA7 /* ChatViewController.swift */; };
+		2B8B39C51D454DF800857DA7 /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39C41D454DF800857DA7 /* Pokemon.ttf */; };
+		2B8B39C71D45501A00857DA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B39C61D45501A00857DA7 /* GoogleService-Info.plist */; };
+		36E2E8D3C9DDF4C2BA6FE793 /* Pods_iMessageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C4F092FE23D07ED5FD1A37 /* Pods_iMessageUITests.framework */; };
+		938F51C5F5FA391F7A21C2AC /* Pods_iMessageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF37D9EC937E112E1E9890A /* Pods_iMessageTests.framework */; };
+		E5652680E112E08D2090A261 /* Pods_iMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FDCE25BA4D5D3A854175D2 /* Pods_iMessage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13C4F092FE23D07ED5FD1A37 /* Pods_iMessageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMessageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2140277F206F17C4E48DFF /* Pods-iMessageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMessageUITests/Pods-iMessageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2615A4E0EFE4A805285DCAE3 /* Pods-iMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessage.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMessage/Pods-iMessage.release.xcconfig"; sourceTree = "<group>"; };
 		2B8B39451D43EA1900857DA7 /* iMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8B39481D43EA1900857DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B8B394D1D43EA1900857DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +89,40 @@
 		2B8B397D1D43EDAE00857DA7 /* RoomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewController.swift; sourceTree = "<group>"; };
 		2B8B39811D43EEE500857DA7 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		2B8B39831D43F1D300857DA7 /* CreateRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRoomViewController.swift; sourceTree = "<group>"; };
+		2B8B398B1D43F6AB00857DA7 /* chatBubbler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatBubbler.png; sourceTree = "<group>"; };
+		2B8B398C1D43F6AB00857DA7 /* chatBubbler@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBubbler@2x.png"; sourceTree = "<group>"; };
+		2B8B398D1D43F6AB00857DA7 /* chatBubbler@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBubbler@3x.png"; sourceTree = "<group>"; };
+		2B8B398E1D43F6AB00857DA7 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		2B8B39901D43F6AB00857DA7 /* chatBubblerOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatBubblerOut.png; sourceTree = "<group>"; };
+		2B8B39911D43F6AB00857DA7 /* chatBubblerOut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBubblerOut@2x.png"; sourceTree = "<group>"; };
+		2B8B39921D43F6AB00857DA7 /* chatBubblerOut@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBubblerOut@3x.png"; sourceTree = "<group>"; };
+		2B8B39931D43F6AB00857DA7 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		2B8B39951D43F6AB00857DA7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		2B8B39961D43F6AB00857DA7 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		2B8B39971D43F6AB00857DA7 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		2B8B39981D43F6AB00857DA7 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		2B8B399A1D43F6AB00857DA7 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		2B8B399B1D43F6AB00857DA7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		2B8B399C1D43F6AB00857DA7 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		2B8B399D1D43F6AB00857DA7 /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
+		2B8B399E1D43F6AB00857DA7 /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
+		2B8B399F1D43F6AB00857DA7 /* photo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2.jpg; sourceTree = "<group>"; };
+		2B8B39A01D43F6AB00857DA7 /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
+		2B8B39A21D43F6AB00857DA7 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		2B8B39A31D43F6AB00857DA7 /* profileImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage.png; sourceTree = "<group>"; };
+		2B8B39A41D43F6AB00857DA7 /* profileImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileImage@2x.png"; sourceTree = "<group>"; };
+		2B8B39A51D43F6AB00857DA7 /* profileImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileImage@3x.png"; sourceTree = "<group>"; };
+		2B8B39A71D43F6AB00857DA7 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		2B8B39A81D43F6AB00857DA7 /* user_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_menu.png; sourceTree = "<group>"; };
+		2B8B39C21D4404F900857DA7 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		2B8B39C41D454DF800857DA7 /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pokemon.ttf; sourceTree = "<group>"; };
+		2B8B39C61D45501A00857DA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5AF37D9EC937E112E1E9890A /* Pods_iMessageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMessageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D9AF7755A936A1837E4004 /* Pods-iMessageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMessageTests/Pods-iMessageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76FDCE25BA4D5D3A854175D2 /* Pods_iMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4FC80861BC6D4940350C5D /* Pods-iMessageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMessageUITests/Pods-iMessageUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AA497D4E67CF3377BEA6136B /* Pods-iMessageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMessageTests/Pods-iMessageTests.release.xcconfig"; sourceTree = "<group>"; };
+		F124C145189991F84BD78173 /* Pods-iMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMessage/Pods-iMessage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5652680E112E08D2090A261 /* Pods_iMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938F51C5F5FA391F7A21C2AC /* Pods_iMessageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E2E8D3C9DDF4C2BA6FE793 /* Pods_iMessageUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +160,8 @@
 				2B8B395C1D43EA1900857DA7 /* iMessageTests */,
 				2B8B39671D43EA1900857DA7 /* iMessageUITests */,
 				2B8B39461D43EA1900857DA7 /* Products */,
+				A36227FAFEB79320717A758D /* Pods */,
+				9D370E355FF9B7865D7E5D84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +181,9 @@
 				2B8B39761D43ECD100857DA7 /* View Controller */,
 				2B8B39481D43EA1900857DA7 /* AppDelegate.swift */,
 				2B8B394C1D43EA1900857DA7 /* Main.storyboard */,
+				2B8B39C41D454DF800857DA7 /* Pokemon.ttf */,
+				2B8B39C61D45501A00857DA7 /* GoogleService-Info.plist */,
+				2B8B39891D43F6AB00857DA7 /* Resources */,
 				2B8B394F1D43EA1900857DA7 /* Assets.xcassets */,
 				2B8B39511D43EA1900857DA7 /* LaunchScreen.storyboard */,
 				2B8B39541D43EA1900857DA7 /* Info.plist */,
@@ -141,8 +217,112 @@
 				2B8B397D1D43EDAE00857DA7 /* RoomCollectionViewController.swift */,
 				2B8B39811D43EEE500857DA7 /* ProfileTableViewController.swift */,
 				2B8B39831D43F1D300857DA7 /* CreateRoomViewController.swift */,
+				2B8B39C21D4404F900857DA7 /* ChatViewController.swift */,
 			);
 			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		2B8B39891D43F6AB00857DA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B8B398A1D43F6AB00857DA7 /* chatBubbler.imageset */,
+				2B8B398F1D43F6AB00857DA7 /* chatBubblerOut.imageset */,
+				2B8B39941D43F6AB00857DA7 /* dismissButt.imageset */,
+				2B8B39991D43F6AB00857DA7 /* logo.imageset */,
+				2B8B399E1D43F6AB00857DA7 /* photo1.jpg */,
+				2B8B399F1D43F6AB00857DA7 /* photo2.jpg */,
+				2B8B39A01D43F6AB00857DA7 /* photo3.jpg */,
+				2B8B39A11D43F6AB00857DA7 /* profileImage.imageset */,
+				2B8B39A61D43F6AB00857DA7 /* user_menu.imageset */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2B8B398A1D43F6AB00857DA7 /* chatBubbler.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2B8B398B1D43F6AB00857DA7 /* chatBubbler.png */,
+				2B8B398C1D43F6AB00857DA7 /* chatBubbler@2x.png */,
+				2B8B398D1D43F6AB00857DA7 /* chatBubbler@3x.png */,
+				2B8B398E1D43F6AB00857DA7 /* Contents.json */,
+			);
+			path = chatBubbler.imageset;
+			sourceTree = "<group>";
+		};
+		2B8B398F1D43F6AB00857DA7 /* chatBubblerOut.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2B8B39901D43F6AB00857DA7 /* chatBubblerOut.png */,
+				2B8B39911D43F6AB00857DA7 /* chatBubblerOut@2x.png */,
+				2B8B39921D43F6AB00857DA7 /* chatBubblerOut@3x.png */,
+				2B8B39931D43F6AB00857DA7 /* Contents.json */,
+			);
+			path = chatBubblerOut.imageset;
+			sourceTree = "<group>";
+		};
+		2B8B39941D43F6AB00857DA7 /* dismissButt.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2B8B39951D43F6AB00857DA7 /* 1.png */,
+				2B8B39961D43F6AB00857DA7 /* 2.png */,
+				2B8B39971D43F6AB00857DA7 /* 3.png */,
+				2B8B39981D43F6AB00857DA7 /* Contents.json */,
+			);
+			path = dismissButt.imageset;
+			sourceTree = "<group>";
+		};
+		2B8B39991D43F6AB00857DA7 /* logo.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2B8B399A1D43F6AB00857DA7 /* Contents.json */,
+				2B8B399B1D43F6AB00857DA7 /* logo.png */,
+				2B8B399C1D43F6AB00857DA7 /* logo@2x.png */,
+				2B8B399D1D43F6AB00857DA7 /* logo@3x.png */,
+			);
+			path = logo.imageset;
+			sourceTree = "<group>";
+		};
+		2B8B39A11D43F6AB00857DA7 /* profileImage.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2B8B39A21D43F6AB00857DA7 /* Contents.json */,
+				2B8B39A31D43F6AB00857DA7 /* profileImage.png */,
+				2B8B39A41D43F6AB00857DA7 /* profileImage@2x.png */,
+				2B8B39A51D43F6AB00857DA7 /* profileImage@3x.png */,
+			);
+			path = profileImage.imageset;
+			sourceTree = "<group>";
+		};
+		2B8B39A61D43F6AB00857DA7 /* user_menu.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				2B8B39A71D43F6AB00857DA7 /* Contents.json */,
+				2B8B39A81D43F6AB00857DA7 /* user_menu.png */,
+			);
+			path = user_menu.imageset;
+			sourceTree = "<group>";
+		};
+		9D370E355FF9B7865D7E5D84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76FDCE25BA4D5D3A854175D2 /* Pods_iMessage.framework */,
+				5AF37D9EC937E112E1E9890A /* Pods_iMessageTests.framework */,
+				13C4F092FE23D07ED5FD1A37 /* Pods_iMessageUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A36227FAFEB79320717A758D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F124C145189991F84BD78173 /* Pods-iMessage.debug.xcconfig */,
+				2615A4E0EFE4A805285DCAE3 /* Pods-iMessage.release.xcconfig */,
+				73D9AF7755A936A1837E4004 /* Pods-iMessageTests.debug.xcconfig */,
+				AA497D4E67CF3377BEA6136B /* Pods-iMessageTests.release.xcconfig */,
+				1B2140277F206F17C4E48DFF /* Pods-iMessageUITests.debug.xcconfig */,
+				9F4FC80861BC6D4940350C5D /* Pods-iMessageUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +332,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8B396D1D43EA1900857DA7 /* Build configuration list for PBXNativeTarget "iMessage" */;
 			buildPhases = (
+				7A7BD04F6C5289C648B0DD67 /* [CP] Check Pods Manifest.lock */,
 				2B8B39411D43EA1900857DA7 /* Sources */,
 				2B8B39421D43EA1900857DA7 /* Frameworks */,
 				2B8B39431D43EA1900857DA7 /* Resources */,
+				68CC830EA482F890AD8D6653 /* [CP] Embed Pods Frameworks */,
+				6CB4B3DC2FCEB998E84EA619 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,9 +352,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8B39701D43EA1900857DA7 /* Build configuration list for PBXNativeTarget "iMessageTests" */;
 			buildPhases = (
+				8101D897F431930140D9BFB8 /* [CP] Check Pods Manifest.lock */,
 				2B8B39551D43EA1900857DA7 /* Sources */,
 				2B8B39561D43EA1900857DA7 /* Frameworks */,
 				2B8B39571D43EA1900857DA7 /* Resources */,
+				847B46562AB3E8D2460BAC12 /* [CP] Embed Pods Frameworks */,
+				1C85188D04CAADBEFA9FF0CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +373,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8B39731D43EA1900857DA7 /* Build configuration list for PBXNativeTarget "iMessageUITests" */;
 			buildPhases = (
+				25AAA898B17AF35645F845E7 /* [CP] Check Pods Manifest.lock */,
 				2B8B39601D43EA1900857DA7 /* Sources */,
 				2B8B39611D43EA1900857DA7 /* Frameworks */,
 				2B8B39621D43EA1900857DA7 /* Resources */,
+				5874BCBF5156C5A984A893FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,9 +438,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8B39B91D43F6AB00857DA7 /* photo1.jpg in Resources */,
+				2B8B39B21D43F6AB00857DA7 /* 2.png in Resources */,
+				2B8B39AB1D43F6AB00857DA7 /* chatBubbler@3x.png in Resources */,
+				2B8B39AF1D43F6AB00857DA7 /* chatBubblerOut@3x.png in Resources */,
+				2B8B39B51D43F6AB00857DA7 /* Contents.json in Resources */,
+				2B8B39A91D43F6AB00857DA7 /* chatBubbler.png in Resources */,
+				2B8B39B61D43F6AB00857DA7 /* logo.png in Resources */,
+				2B8B39C11D43F6AB00857DA7 /* user_menu.png in Resources */,
+				2B8B39AA1D43F6AB00857DA7 /* chatBubbler@2x.png in Resources */,
+				2B8B39B81D43F6AB00857DA7 /* logo@3x.png in Resources */,
+				2B8B39B71D43F6AB00857DA7 /* logo@2x.png in Resources */,
+				2B8B39B41D43F6AB00857DA7 /* Contents.json in Resources */,
+				2B8B39C51D454DF800857DA7 /* Pokemon.ttf in Resources */,
+				2B8B39B31D43F6AB00857DA7 /* 3.png in Resources */,
+				2B8B39AE1D43F6AB00857DA7 /* chatBubblerOut@2x.png in Resources */,
+				2B8B39AD1D43F6AB00857DA7 /* chatBubblerOut.png in Resources */,
+				2B8B39BE1D43F6AB00857DA7 /* profileImage@2x.png in Resources */,
+				2B8B39C71D45501A00857DA7 /* GoogleService-Info.plist in Resources */,
 				2B8B39531D43EA1900857DA7 /* LaunchScreen.storyboard in Resources */,
 				2B8B39501D43EA1900857DA7 /* Assets.xcassets in Resources */,
+				2B8B39BB1D43F6AB00857DA7 /* photo3.jpg in Resources */,
+				2B8B39BC1D43F6AB00857DA7 /* Contents.json in Resources */,
+				2B8B39BA1D43F6AB00857DA7 /* photo2.jpg in Resources */,
+				2B8B39C01D43F6AB00857DA7 /* Contents.json in Resources */,
 				2B8B394E1D43EA1900857DA7 /* Main.storyboard in Resources */,
+				2B8B39BF1D43F6AB00857DA7 /* profileImage@3x.png in Resources */,
+				2B8B39B11D43F6AB00857DA7 /* 1.png in Resources */,
+				2B8B39B01D43F6AB00857DA7 /* Contents.json in Resources */,
+				2B8B39AC1D43F6AB00857DA7 /* Contents.json in Resources */,
+				2B8B39BD1D43F6AB00857DA7 /* profileImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +487,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C85188D04CAADBEFA9FF0CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMessageTests/Pods-iMessageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25AAA898B17AF35645F845E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5874BCBF5156C5A984A893FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMessageUITests/Pods-iMessageUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68CC830EA482F890AD8D6653 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMessage/Pods-iMessage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CB4B3DC2FCEB998E84EA619 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMessage/Pods-iMessage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A7BD04F6C5289C648B0DD67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8101D897F431930140D9BFB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		847B46562AB3E8D2460BAC12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMessageTests/Pods-iMessageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B8B39411D43EA1900857DA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -280,6 +618,7 @@
 				2B8B39821D43EEE500857DA7 /* ProfileTableViewController.swift in Sources */,
 				2B8B39841D43F1D300857DA7 /* CreateRoomViewController.swift in Sources */,
 				2B8B397C1D43ED3D00857DA7 /* SignUpViewController.swift in Sources */,
+				2B8B39C31D4404F900857DA7 /* ChatViewController.swift in Sources */,
 				2B8B397E1D43EDAE00857DA7 /* RoomCollectionViewController.swift in Sources */,
 				2B8B397A1D43ED1300857DA7 /* LogInViewController.swift in Sources */,
 				2B8B39491D43EA1900857DA7 /* AppDelegate.swift in Sources */,
@@ -422,6 +761,7 @@
 		};
 		2B8B396E1D43EA1900857DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F124C145189991F84BD78173 /* Pods-iMessage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -436,6 +776,7 @@
 		};
 		2B8B396F1D43EA1900857DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2615A4E0EFE4A805285DCAE3 /* Pods-iMessage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -450,6 +791,7 @@
 		};
 		2B8B39711D43EA1900857DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D9AF7755A936A1837E4004 /* Pods-iMessageTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = iMessageTests/Info.plist;
@@ -462,6 +804,7 @@
 		};
 		2B8B39721D43EA1900857DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA497D4E67CF3377BEA6136B /* Pods-iMessageTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = iMessageTests/Info.plist;
@@ -474,6 +817,7 @@
 		};
 		2B8B39741D43EA1900857DA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2140277F206F17C4E48DFF /* Pods-iMessageUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = iMessageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -485,6 +829,7 @@
 		};
 		2B8B39751D43EA1900857DA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4FC80861BC6D4940350C5D /* Pods-iMessageUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = iMessageUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
