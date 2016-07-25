@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2B20DB1D45AB3400E4634E /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B2B20D81D45AB3400E4634E /* ProgressHUD.bundle */; };
+		2B2B20DC1D45AB3400E4634E /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B20DA1D45AB3400E4634E /* ProgressHUD.m */; };
 		2B8B39491D43EA1900857DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39481D43EA1900857DA7 /* AppDelegate.swift */; };
 		2B8B394E1D43EA1900857DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B394C1D43EA1900857DA7 /* Main.storyboard */; };
 		2B8B39501D43EA1900857DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B394F1D43EA1900857DA7 /* Assets.xcassets */; };
@@ -73,6 +75,10 @@
 		13C4F092FE23D07ED5FD1A37 /* Pods_iMessageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMessageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B2140277F206F17C4E48DFF /* Pods-iMessageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMessageUITests/Pods-iMessageUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2615A4E0EFE4A805285DCAE3 /* Pods-iMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessage.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMessage/Pods-iMessage.release.xcconfig"; sourceTree = "<group>"; };
+		2B2B20D71D45AB3400E4634E /* iMessage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMessage-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B2B20D81D45AB3400E4634E /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		2B2B20D91D45AB3400E4634E /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		2B2B20DA1D45AB3400E4634E /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		2B8B39451D43EA1900857DA7 /* iMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8B39481D43EA1900857DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B8B394D1D43EA1900857DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -185,11 +191,15 @@
 				2B8B394C1D43EA1900857DA7 /* Main.storyboard */,
 				2B8B39C41D454DF800857DA7 /* Pokemon.ttf */,
 				2B8B39C61D45501A00857DA7 /* GoogleService-Info.plist */,
+				2B2B20D81D45AB3400E4634E /* ProgressHUD.bundle */,
+				2B2B20D91D45AB3400E4634E /* ProgressHUD.h */,
+				2B2B20DA1D45AB3400E4634E /* ProgressHUD.m */,
 				2B8B39891D43F6AB00857DA7 /* Resources */,
 				2B8B394F1D43EA1900857DA7 /* Assets.xcassets */,
 				2B8B39511D43EA1900857DA7 /* LaunchScreen.storyboard */,
 				2B8B39541D43EA1900857DA7 /* Info.plist */,
 				2B8B39C81D4583AD00857DA7 /* DataService.swift */,
+				2B2B20D71D45AB3400E4634E /* iMessage-Bridging-Header.h */,
 			);
 			path = iMessage;
 			sourceTree = "<group>";
@@ -466,6 +476,7 @@
 				2B8B39BA1D43F6AB00857DA7 /* photo2.jpg in Resources */,
 				2B8B39C01D43F6AB00857DA7 /* Contents.json in Resources */,
 				2B8B394E1D43EA1900857DA7 /* Main.storyboard in Resources */,
+				2B2B20DB1D45AB3400E4634E /* ProgressHUD.bundle in Resources */,
 				2B8B39BF1D43F6AB00857DA7 /* profileImage@3x.png in Resources */,
 				2B8B39B11D43F6AB00857DA7 /* 1.png in Resources */,
 				2B8B39B01D43F6AB00857DA7 /* Contents.json in Resources */,
@@ -618,6 +629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2B20DC1D45AB3400E4634E /* ProgressHUD.m in Sources */,
 				2B8B39821D43EEE500857DA7 /* ProfileTableViewController.swift in Sources */,
 				2B8B39841D43F1D300857DA7 /* CreateRoomViewController.swift in Sources */,
 				2B8B397C1D43ED3D00857DA7 /* SignUpViewController.swift in Sources */,
@@ -768,6 +780,7 @@
 			baseConfigurationReference = F124C145189991F84BD78173 /* Pods-iMessage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iMessage/Info.plist;
@@ -775,6 +788,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edward.iMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iMessage/iMessage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -783,6 +798,7 @@
 			baseConfigurationReference = 2615A4E0EFE4A805285DCAE3 /* Pods-iMessage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iMessage/Info.plist;
@@ -790,6 +806,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edward.iMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iMessage/iMessage-Bridging-Header.h";
 			};
 			name = Release;
 		};

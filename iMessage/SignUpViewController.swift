@@ -61,9 +61,8 @@ class SignUpViewController: UIViewController{
         //压缩比例计算
         data =  UIImageJPEGRepresentation(profileImage.image!, 0.1)!
         //Signing up
+        ProgressHUD.show("Please wait....", interaction: false)
         DataService.dataService.SignUp(username, email: email, password: password, data: data)
-        
-        
     }
     
     @IBAction func CancelDidTapped(sender: AnyObject) {

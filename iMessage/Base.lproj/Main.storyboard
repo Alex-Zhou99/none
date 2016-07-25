@@ -353,8 +353,11 @@
                                 <state key="normal" title="CREATE">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="CreateRoomDidTapped:" destination="TlG-KZ-Nfu" eventType="touchUpInside" id="o7B-Yk-Z0L"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xg4-G9-7La">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xg4-G9-7La">
                                 <rect key="frame" x="0.0" y="52" width="320" height="210"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoG-Gp-t4q">
@@ -362,11 +365,13 @@
                                 <state key="normal" title="CHOOSE ROOM THUMBNAIL">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectPhoto_DidTapped:" destination="TlG-KZ-Nfu" eventType="touchUpInside" id="rhu-7f-tf5"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ROOM NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyq-Cm-e6F">
                                 <rect key="frame" x="0.0" y="283" width="320" height="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sN-T3-P0j">
@@ -377,6 +382,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="captionLbl" destination="Tyq-Cm-e6F" id="ObX-19-yFx"/>
+                        <outlet property="choosePhotoBtn" destination="GoG-Gp-t4q" id="PCU-FV-MIo"/>
+                        <outlet property="photoImg" destination="xg4-G9-7La" id="qeM-eM-tV2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Voc-By-Eva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

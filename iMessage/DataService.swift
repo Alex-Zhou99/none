@@ -23,8 +23,35 @@ class DataService{
     }
     var fileUrl: String!
     
+    func CreateNewRoom(user: FIRUser, caption: String, data: NSData)
+    {
+        
+        //返回以2001/01/01 GMT为基准，然后过了secs秒的时间
+        let filePath = "\(user.uid)/\(Int(NSDate.timeIntervalSinceReferenceDate()))"
+        let metaData = FIRStorageMetadata()
+        metaData.contentType = "image/jpg"
+        storageRef.child(filePath).putData(data, metadata: metaData) { (metadata, error) in
+            if let error = error{
+                print("Error uploading:\(error.description)")
+                return
+            }
+            
+            //Create a url for data(thumbnail image)
+            self.fileUrl = metadata?.downloadURLs![0].absoluteString
+            if let user = FIRAuth.auth()?.currentUser{
+                let idRoom = self.BASE_REF.child("rooms").childByAutoId()
+                print("fdsafdas")
+                idRoom.setValue(["caption": caption, "thumbaniUrlFromStorage": self.storageRef.child(metadata!.path!).description, "fileUrl": self.fileUrl])
+                print("fdsafdfasfasfdas")
+            }
+        }
+    }
+    
+    
+    
     //操作文件数据 NSData
-    func SignUp(username: String, email: String, password: String, data: NSData){
+    func SignUp(username: String, email: String, password: String, data: NSData)
+    {
         FIRAuth.auth()?.createUserWithEmail(email, password: password, completion: { ( user,error) in
             if let error = error {
                 print(error.localizedDescription)
@@ -58,11 +85,13 @@ class DataService{
                         print("profile updated")
                     }
                 })
+                ProgressHUD.showSuccess("Succeeded")
                 let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 appDelegate.login()
             })
             
-            
+        
         })
     }
+    
 }
