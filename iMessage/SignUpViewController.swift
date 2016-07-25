@@ -52,6 +52,18 @@ class SignUpViewController: UIViewController{
     
     
     @IBAction func SignUpTapped(sender: AnyObject) {
+        
+        guard let email = emailTextFeild.text where !email.isEmpty, let password = passwordTextField.text where !password.isEmpty, let username = usernameTextField.text where !username.isEmpty else{
+            return
+        }
+        //数据,当我们需要把一些信息写入到文件里或发送到网络上
+        var data = NSData()
+        //压缩比例计算
+        data =  UIImageJPEGRepresentation(profileImage.image!, 0.1)!
+        //Signing up
+        DataService.dataService.SignUp(username, email: email, password: password, data: data)
+        
+        
     }
     
     @IBAction func CancelDidTapped(sender: AnyObject) {
