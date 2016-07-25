@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B2B20DB1D45AB3400E4634E /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B2B20D81D45AB3400E4634E /* ProgressHUD.bundle */; };
 		2B2B20DC1D45AB3400E4634E /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B20DA1D45AB3400E4634E /* ProgressHUD.m */; };
+		2B2B20DE1D45D42F00E4634E /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B20DD1D45D42F00E4634E /* RoomCollectionViewCell.swift */; };
+		2B2B20E01D45D57E00E4634E /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B20DF1D45D57E00E4634E /* Room.swift */; };
 		2B8B39491D43EA1900857DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39481D43EA1900857DA7 /* AppDelegate.swift */; };
 		2B8B394E1D43EA1900857DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B394C1D43EA1900857DA7 /* Main.storyboard */; };
 		2B8B39501D43EA1900857DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B394F1D43EA1900857DA7 /* Assets.xcassets */; };
@@ -79,6 +81,8 @@
 		2B2B20D81D45AB3400E4634E /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		2B2B20D91D45AB3400E4634E /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		2B2B20DA1D45AB3400E4634E /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		2B2B20DD1D45D42F00E4634E /* RoomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoomCollectionViewCell.swift; path = ../RoomCollectionViewCell.swift; sourceTree = "<group>"; };
+		2B2B20DF1D45D57E00E4634E /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		2B8B39451D43EA1900857DA7 /* iMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8B39481D43EA1900857DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B8B394D1D43EA1900857DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -188,18 +192,20 @@
 			children = (
 				2B8B39761D43ECD100857DA7 /* View Controller */,
 				2B8B39481D43EA1900857DA7 /* AppDelegate.swift */,
-				2B8B394C1D43EA1900857DA7 /* Main.storyboard */,
-				2B8B39C41D454DF800857DA7 /* Pokemon.ttf */,
-				2B8B39C61D45501A00857DA7 /* GoogleService-Info.plist */,
-				2B2B20D81D45AB3400E4634E /* ProgressHUD.bundle */,
-				2B2B20D91D45AB3400E4634E /* ProgressHUD.h */,
-				2B2B20DA1D45AB3400E4634E /* ProgressHUD.m */,
+				2B2B20DD1D45D42F00E4634E /* RoomCollectionViewCell.swift */,
+				2B8B39C81D4583AD00857DA7 /* DataService.swift */,
+				2B2B20DF1D45D57E00E4634E /* Room.swift */,
 				2B8B39891D43F6AB00857DA7 /* Resources */,
 				2B8B394F1D43EA1900857DA7 /* Assets.xcassets */,
+				2B8B394C1D43EA1900857DA7 /* Main.storyboard */,
 				2B8B39511D43EA1900857DA7 /* LaunchScreen.storyboard */,
+				2B8B39C41D454DF800857DA7 /* Pokemon.ttf */,
 				2B8B39541D43EA1900857DA7 /* Info.plist */,
-				2B8B39C81D4583AD00857DA7 /* DataService.swift */,
+				2B2B20D91D45AB3400E4634E /* ProgressHUD.h */,
+				2B2B20DA1D45AB3400E4634E /* ProgressHUD.m */,
 				2B2B20D71D45AB3400E4634E /* iMessage-Bridging-Header.h */,
+				2B8B39C61D45501A00857DA7 /* GoogleService-Info.plist */,
+				2B2B20D81D45AB3400E4634E /* ProgressHUD.bundle */,
 			);
 			path = iMessage;
 			sourceTree = "<group>";
@@ -636,8 +642,10 @@
 				2B8B39C31D4404F900857DA7 /* ChatViewController.swift in Sources */,
 				2B8B397E1D43EDAE00857DA7 /* RoomCollectionViewController.swift in Sources */,
 				2B8B397A1D43ED1300857DA7 /* LogInViewController.swift in Sources */,
+				2B2B20DE1D45D42F00E4634E /* RoomCollectionViewCell.swift in Sources */,
 				2B8B39491D43EA1900857DA7 /* AppDelegate.swift in Sources */,
 				2B8B39C91D4583AD00857DA7 /* DataService.swift in Sources */,
+				2B2B20E01D45D57E00E4634E /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,11 +9,19 @@
 import Foundation
 import Firebase
 
+let roofRef = FIRDatabase.database().reference()
+
 class DataService{
     
     static let dataService = DataService()
     
-    private var _BASE_REF = FIRDatabase.database().reference()
+    private var _BASE_REF = roofRef
+    
+    private var _ROOM_REF = roofRef.child("rooms")
+    
+    var ROOM_REF: FIRDatabaseReference{
+        return _ROOM_REF
+    }
     
     var BASE_REF: FIRDatabaseReference{
         return _BASE_REF
@@ -42,11 +50,17 @@ class DataService{
                 let idRoom = self.BASE_REF.child("rooms").childByAutoId()
                 print("fdsafdas")
                 idRoom.setValue(["caption": caption, "thumbaniUrlFromStorage": self.storageRef.child(metadata!.path!).description, "fileUrl": self.fileUrl])
-                print("fdsafdfasfasfdas")
             }
         }
     }
     
+    func fetchDataFromServer(callback: (Room)->()){
+        DataService.dataService.ROOM_REF.observeEventType(.ChildAdded, withBlock: { ( snapshot) in
+            //明天看这里，snapshot在firebase中的定义，弄懂，与Room中的结合
+            let room = Room(key: snapshot.key, snapshot: snapshot.value as! Dictionary<String, AnyObject>)
+            callback(room)
+        })
+    }
     
     
     //操作文件数据 NSData
