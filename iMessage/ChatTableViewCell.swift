@@ -21,9 +21,9 @@ class ChatTableViewCell: UITableViewCell {
         profileImageView.layer.cornerRadius = profileImageView.frame.size.width / 2
         profileImageView.clipsToBounds = true
     }
-    func configCell(message: Dictionary<String, AnyObject>){
+    func configCell(idUser: String, message: Dictionary<String, AnyObject>){
         self.messageTextLabel.text = message["message"] as? String
-        DataService.dataService.PROPLE_REF.child((FIRAuth.auth()?.currentUser?.uid)!).observeEventType(.Value, withBlock: {
+        DataService.dataService.PROPLE_REF.child(idUser).observeEventType(.Value, withBlock: {
             snapshot -> Void in
             let dict = snapshot.value as! Dictionary<String, AnyObject>
             let imageUrl = dict["profileImage"] as! String

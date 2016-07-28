@@ -57,11 +57,11 @@ extension ChatViewController: UITableViewDelegate,UITableViewDataSource{
         print("edward")
         if messageId == DataService.dataService.currentUser?.uid{
             let cell = tableView.dequeueReusableCellWithIdentifier(Constants.cellIdMessageSent, forIndexPath: indexPath) as! ChatTableViewCell
-            cell.configCell(message)
+            cell.configCell(messageId, message: message)
             return cell
         }else{
             let cell = tableView.dequeueReusableCellWithIdentifier(Constants.cellIdMessageRecieved, forIndexPath: indexPath) as! ChatTableViewCell
-            cell.configCell(message)
+            cell.configCell(messageId, message: message)
             return cell
         }
     }
