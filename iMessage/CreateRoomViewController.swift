@@ -43,7 +43,7 @@ class CreateRoomViewController: UIViewController,UIImagePickerControllerDelegate
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        selectedPhoto = info[UIImagePickerControllerEditedImage] as? UIImage
+        selectedPhoto = info[UIImagePickerControllerOriginalImage] as? UIImage
         photoImg.image = selectedPhoto
         picker.dismissViewControllerAnimated(true, completion: nil)
         choosePhotoBtn.hidden = true

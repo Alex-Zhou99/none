@@ -19,6 +19,10 @@ class DataService{
     
     private var _ROOM_REF = roofRef.child("rooms")
     
+    var currentUser: FIRUser? {
+        return FIRAuth.auth()!.currentUser!
+    }
+    
     var ROOM_REF: FIRDatabaseReference{
         return _ROOM_REF
     }
@@ -106,6 +110,33 @@ class DataService{
             
         
         })
+    }
+    func login(email: String, password: String){
+        FIRAuth.auth()?.signInWithEmail(email, password: password, completion: { (user, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            ProgressHUD.showSuccess("Succeeded")
+            let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.login()
+        })
+        
+    }
+    
+    func logout(){
+        let firebaseAuth = FIRAuth.auth()
+        do{
+            try firebaseAuth?.signOut()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let logInVC = storyboard.instantiateViewControllerWithIdentifier("LogInVC")
+            UIApplication.sharedApplication().keyWindow?.rootViewController = logInVC
+        }catch let signOutError as NSError{
+            print("Error signing out : \(signOutError)")
+        }
+    }
+    func saveProfile(){
+        
     }
     
 }

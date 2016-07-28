@@ -10,26 +10,25 @@ import UIKit
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet weak var emailTxtField: UITextField!
+    
+    @IBOutlet weak var passwordTxtField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let dismissKeyboard = UITapGestureRecognizer(target: self, action: #selector(CreateRoomViewController.dismissKeyboard(_:)))
+        dismissKeyboard.numberOfTapsRequired = 1
+        view.addGestureRecognizer(dismissKeyboard)
+    }
+    func dismissKeyboard(tap: UITapGestureRecognizer){
+        view.endEditing(true)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func loginDidTapped(sender: AnyObject) {
+        guard let email = emailTxtField.text where !email.isEmpty, let password = passwordTxtField.text where !password.isEmpty else{
+            ProgressHUD.showError("Email and Password cant be empty")
+            return
+        }
+        ProgressHUD.show("Signing in...")
+        DataService.dataService.login(email, password: password)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

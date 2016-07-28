@@ -8,7 +8,7 @@
         <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="iMessage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInVC" id="BYZ-38-t0r" customClass="LogInViewController" customModule="iMessage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,6 +24,9 @@
                                 <state key="normal" title="LOG IN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCw-IN-vi1"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tbN-dv-YvW">
                                 <rect key="frame" x="110" y="125" width="100" height="100"/>
@@ -55,6 +58,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="G9c-lg-Zmc" id="fk0-CA-dG8"/>
+                        <outlet property="passwordTxtField" destination="tiq-KW-hxE" id="1sb-4L-TjR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,7 +131,7 @@
                     <navigationItem key="navigationItem" title="Room" id="ban-Pw-v8i">
                         <barButtonItem key="leftBarButtonItem" image="user_menu" id="zom-bm-OwC">
                             <connections>
-                                <segue destination="v7g-w6-gKM" kind="push" id="cF6-iQ-ZU9"/>
+                                <action selector="logout:" destination="bJx-Vx-0W6" id="4mi-zG-eRt"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jhU-5z-v8W">
@@ -226,16 +233,16 @@
         <!--My Profile-->
         <scene sceneID="ld0-Pa-hga">
             <objects>
-                <tableViewController id="v7g-w6-gKM" customClass="ProfileTableViewController" customModule="iMessage" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="EditProfile" id="v7g-w6-gKM" customClass="ProfileTableViewController" customModule="iMessage" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="NbC-qX-F9G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="MPL-Q3-euD">
-                            <rect key="frame" x="0.0" y="64" width="320" height="150"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="gfC-nO-w1g">
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="gfC-nO-w1g">
                                     <rect key="frame" x="120" y="35" width="80" height="80"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="1FK-3C-OtE"/>
@@ -253,7 +260,7 @@
                             <tableViewSection headerTitle="" id="aDY-CP-5Fb">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="N2m-x5-AZH">
-                                        <rect key="frame" x="0.0" y="214" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="150" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N2m-x5-AZH" id="IoX-RK-ggh">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -269,7 +276,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="username" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fL-nu-jmw">
+                                                <textField opaque="NO" clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fL-nu-jmw">
                                                     <rect key="frame" x="80" y="8" width="232" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="8lp-l7-mOC"/>
@@ -288,7 +295,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JNs-ml-uCl">
-                                        <rect key="frame" x="0.0" y="258" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="194" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JNs-ml-uCl" id="YMC-19-P8U">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -300,7 +307,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GlS-Ez-sTj">
+                                                <textField opaque="NO" clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GlS-Ez-sTj">
                                                     <rect key="frame" x="80" y="7" width="232" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -313,7 +320,7 @@
                             <tableViewSection headerTitle="" id="B9t-Ak-xA2">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AeA-y2-HIT">
-                                        <rect key="frame" x="0.0" y="338" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="274" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AeA-y2-HIT" id="za6-Lw-e8g">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -328,6 +335,9 @@
                                                     <state key="normal" title="Save">
                                                         <color key="titleColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="saveDidTapped:" destination="v7g-w6-gKM" eventType="touchUpInside" id="FC3-pz-inP"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -345,6 +355,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Profile" id="X0p-wG-1G1"/>
+                    <connections>
+                        <outlet property="email" destination="GlS-Ez-sTj" id="Gkz-uF-0ER"/>
+                        <outlet property="profileImage" destination="gfC-nO-w1g" id="KQz-mS-4G1"/>
+                        <outlet property="username" destination="1fL-nu-jmw" id="Xec-Ye-YhK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7D4-4X-rlR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

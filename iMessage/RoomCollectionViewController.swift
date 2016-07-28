@@ -42,35 +42,31 @@ class RoomCollectionViewController: UICollectionViewController,UICollectionViewD
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSizeMake(view.frame.size.width / 2 - 5, view.frame.size.width / 2 - 5)
     }
-
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
     
+    @IBAction func logout(sender: AnyObject) {
+        let actionSheetController = UIAlertController(title: "Please select", message: "Option to select", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let cancelActionButton = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (action)
+            in
+        }
+        actionSheetController.addAction(cancelActionButton)
+        
+        let profileActionButton = UIAlertAction(title: "Profile", style: UIAlertActionStyle.Default){ (action) in
+            let profileVC = self.storyboard?.instantiateViewControllerWithIdentifier("EditProfile") as! ProfileTableViewController
+            self.navigationController?.pushViewController(profileVC, animated: true)
+            
+        }
+        actionSheetController.addAction(profileActionButton)
+        
+        let logoutAction = UIAlertAction(title: "Log out", style: UIAlertActionStyle.Default) { (action)
+            in
+            self.logoutDidTapped()
+        }
+        actionSheetController.addAction(logoutAction)
+        
+        self.presentViewController(actionSheetController, animated: true, completion: nil)
     }
-    */
-
+    func logoutDidTapped(){
+        DataService.dataService.logout()
+    }
+    
 }

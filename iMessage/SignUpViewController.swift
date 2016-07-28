@@ -72,7 +72,7 @@ class SignUpViewController: UIViewController{
 
 extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        selectedPhoto = info[UIImagePickerControllerEditedImage] as? UIImage
+        selectedPhoto = info[UIImagePickerControllerOriginalImage] as? UIImage
         self.profileImage.image = selectedPhoto
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
