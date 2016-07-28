@@ -10,34 +10,39 @@ import UIKit
 import FirebaseAuth
 import FirebaseStorage
 
-class RoomCollectionViewController: UICollectionViewController {
+class RoomCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
+    
+    var rooms = [Room]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DataService.dataService.
+        DataService.dataService.fetchDataFromServer{ (room) in
+            self.rooms.append(room)
+            let indexPath = NSIndexPath(forItem: self.rooms.count - 1, inSection: 0)
+            self.collectionView?.insertItemsAtIndexPaths([indexPath])
+        }
 
-    }
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return rooms.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-       // let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-    
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("roomCell", forIndexPath: indexPath) as! RoomCollectionViewCell
+        let room = rooms[indexPath.row]
         // Configure the cell
-    
+        cell.configureCell(room)
         return cell
     }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSizeMake(view.frame.size.width / 2 - 5, view.frame.size.width / 2 - 5)
+    }
 
-    // MARK: UICollectionViewDelegate
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking

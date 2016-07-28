@@ -56,8 +56,8 @@ class DataService{
     
     func fetchDataFromServer(callback: (Room)->()){
         DataService.dataService.ROOM_REF.observeEventType(.ChildAdded, withBlock: { ( snapshot) in
-            //明天看这里，snapshot在firebase中的定义，弄懂，与Room中的结合
             let room = Room(key: snapshot.key, snapshot: snapshot.value as! Dictionary<String, AnyObject>)
+            //Gets the key of the location that generated this DataSnapshot
             callback(room)
         })
     }

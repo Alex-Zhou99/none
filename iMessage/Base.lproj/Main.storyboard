@@ -82,11 +82,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DL3-FP-EGa">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DL3-FP-EGa">
                                             <rect key="frame" x="5" y="5" width="140" height="160"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="140" id="Qgk-cg-W24"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNc-Az-9ot">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNc-Az-9ot">
                                             <rect key="frame" x="2" y="166" width="146" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="tsV-U1-bVc"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -95,6 +101,14 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DL3-FP-EGa" firstAttribute="leading" secondItem="kDr-2c-e8W" secondAttribute="leading" constant="5" id="53Q-GC-uf4"/>
+                                    <constraint firstAttribute="trailing" secondItem="QNc-Az-9ot" secondAttribute="trailing" constant="2" id="GG5-Vk-KaB"/>
+                                    <constraint firstItem="QNc-Az-9ot" firstAttribute="top" secondItem="DL3-FP-EGa" secondAttribute="bottom" constant="1" id="Pi8-2W-He7"/>
+                                    <constraint firstAttribute="bottom" secondItem="QNc-Az-9ot" secondAttribute="bottom" constant="2" id="XEG-ZK-gYP"/>
+                                    <constraint firstItem="DL3-FP-EGa" firstAttribute="top" secondItem="kDr-2c-e8W" secondAttribute="top" constant="5" id="Xv8-Ci-wod"/>
+                                    <constraint firstItem="QNc-Az-9ot" firstAttribute="leading" secondItem="kDr-2c-e8W" secondAttribute="leading" constant="2" id="wNE-tV-bUN"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="captionLbl" destination="QNc-Az-9ot" id="H0L-95-JEa"/>
                                     <outlet property="thumbnailPhoto" destination="DL3-FP-EGa" id="QYf-gQ-05x"/>
