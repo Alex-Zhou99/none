@@ -53,5 +53,6 @@ class CreateRoomViewController: UIViewController,UIImagePickerControllerDelegate
         var data: NSData = NSData()
         data = UIImageJPEGRepresentation(photoImg.image!, 0.1)!
         DataService.dataService.CreateNewRoom((FIRAuth.auth()?.currentUser)!, caption: captionLbl.text!, data: data)
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }

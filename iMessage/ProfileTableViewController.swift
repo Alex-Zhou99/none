@@ -51,7 +51,7 @@ class ProfileTableViewController: UITableViewController, UINavigationControllerD
         var data = NSData()
         data = UIImageJPEGRepresentation(profileImage.image!, 0.1)!
         ProgressHUD.show("Please wait...", interaction: false)
-        DataService.dataService.saveProfile()
+        DataService.dataService.saveProfile(username.text!, email: email.text!, data: data)
     }
 
 

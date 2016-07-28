@@ -11,6 +11,7 @@
 		2B2B20DC1D45AB3400E4634E /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B20DA1D45AB3400E4634E /* ProgressHUD.m */; };
 		2B2B20DE1D45D42F00E4634E /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B20DD1D45D42F00E4634E /* RoomCollectionViewCell.swift */; };
 		2B2B20E01D45D57E00E4634E /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B20DF1D45D57E00E4634E /* Room.swift */; };
+		2B6CB27B1D49E501003E7CFE /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CB27A1D49E501003E7CFE /* ChatTableViewCell.swift */; };
 		2B8B39491D43EA1900857DA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B39481D43EA1900857DA7 /* AppDelegate.swift */; };
 		2B8B394E1D43EA1900857DA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B394C1D43EA1900857DA7 /* Main.storyboard */; };
 		2B8B39501D43EA1900857DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8B394F1D43EA1900857DA7 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		2B2B20DA1D45AB3400E4634E /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		2B2B20DD1D45D42F00E4634E /* RoomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoomCollectionViewCell.swift; path = ../RoomCollectionViewCell.swift; sourceTree = "<group>"; };
 		2B2B20DF1D45D57E00E4634E /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		2B6CB27A1D49E501003E7CFE /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		2B8B39451D43EA1900857DA7 /* iMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8B39481D43EA1900857DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B8B394D1D43EA1900857DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				2B8B39811D43EEE500857DA7 /* ProfileTableViewController.swift */,
 				2B8B39831D43F1D300857DA7 /* CreateRoomViewController.swift */,
 				2B8B39C21D4404F900857DA7 /* ChatViewController.swift */,
+				2B6CB27A1D49E501003E7CFE /* ChatTableViewCell.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				2B8B397A1D43ED1300857DA7 /* LogInViewController.swift in Sources */,
 				2B2B20DE1D45D42F00E4634E /* RoomCollectionViewCell.swift in Sources */,
 				2B8B39491D43EA1900857DA7 /* AppDelegate.swift in Sources */,
+				2B6CB27B1D49E501003E7CFE /* ChatTableViewCell.swift in Sources */,
 				2B8B39C91D4583AD00857DA7 /* DataService.swift in Sources */,
 				2B2B20E01D45D57E00E4634E /* Room.swift in Sources */,
 			);
