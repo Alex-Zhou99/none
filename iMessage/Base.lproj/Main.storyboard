@@ -385,15 +385,15 @@
                                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="gfC-nO-w1g">
                                     <rect key="frame" x="120" y="35" width="80" height="80"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="80" id="1FK-3C-OtE"/>
-                                        <constraint firstAttribute="height" constant="80" id="SPF-gm-HJi"/>
+                                        <constraint firstAttribute="width" constant="80" id="Qeo-FJ-aCZ"/>
+                                        <constraint firstAttribute="height" constant="80" id="pzY-KK-RbY"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="gfC-nO-w1g" firstAttribute="centerX" secondItem="MPL-Q3-euD" secondAttribute="centerX" id="05b-IJ-ZjQ"/>
-                                <constraint firstItem="gfC-nO-w1g" firstAttribute="centerY" secondItem="MPL-Q3-euD" secondAttribute="centerY" id="hLS-zF-6G1"/>
+                                <constraint firstItem="gfC-nO-w1g" firstAttribute="centerY" secondItem="MPL-Q3-euD" secondAttribute="centerY" id="G5a-7r-bCV"/>
+                                <constraint firstItem="gfC-nO-w1g" firstAttribute="centerX" secondItem="MPL-Q3-euD" secondAttribute="centerX" id="zIz-ct-RXV"/>
                             </constraints>
                         </view>
                         <sections>
@@ -421,16 +421,24 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="8lp-l7-mOC"/>
                                                         <constraint firstAttribute="width" constant="232" id="G2L-u8-mQw"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="rlT-pf-XKo"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="1fL-nu-jmw" firstAttribute="top" secondItem="IoX-RK-ggh" secondAttribute="top" constant="8" id="4bv-se-wIH"/>
+                                                <constraint firstItem="1fL-nu-jmw" firstAttribute="leading" secondItem="eJQ-SH-fkB" secondAttribute="trailing" constant="8" id="FBX-ix-6pS"/>
                                                 <constraint firstAttribute="trailing" secondItem="1fL-nu-jmw" secondAttribute="trailing" constant="8" id="Fm9-SL-HGX"/>
+                                                <constraint firstAttribute="trailing" secondItem="1fL-nu-jmw" secondAttribute="trailing" constant="8" id="MmP-aK-edZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="eJQ-SH-fkB" secondAttribute="bottom" constant="11.5" id="Sy9-S0-Dax"/>
                                                 <constraint firstItem="eJQ-SH-fkB" firstAttribute="leading" secondItem="IoX-RK-ggh" secondAttribute="leading" constant="8" id="XP5-Px-xTX"/>
+                                                <constraint firstAttribute="bottom" secondItem="1fL-nu-jmw" secondAttribute="bottom" constant="5.5" id="XT9-4Y-5rZ"/>
+                                                <constraint firstItem="eJQ-SH-fkB" firstAttribute="leading" secondItem="IoX-RK-ggh" secondAttribute="leading" constant="8" id="jnN-zP-bKx"/>
                                                 <constraint firstAttribute="bottom" secondItem="1fL-nu-jmw" secondAttribute="bottom" constant="5.5" id="rSL-dV-dWQ"/>
                                                 <constraint firstAttribute="bottom" secondItem="eJQ-SH-fkB" secondAttribute="bottom" constant="11.5" id="tuA-l4-BTi"/>
+                                                <constraint firstItem="eJQ-SH-fkB" firstAttribute="top" secondItem="IoX-RK-ggh" secondAttribute="top" constant="11" id="zYV-bc-WMd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -441,18 +449,30 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHk-Di-fSF">
+                                                <textField opaque="NO" clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GlS-Ez-sTj">
+                                                    <rect key="frame" x="80" y="7" width="232" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="stB-XA-x7F"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHk-Di-fSF">
                                                     <rect key="frame" x="8" y="11" width="64" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GlS-Ez-sTj">
-                                                    <rect key="frame" x="80" y="7" width="232" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pHk-Di-fSF" firstAttribute="leading" secondItem="YMC-19-P8U" secondAttribute="leading" constant="8" id="Ciu-3n-tPi"/>
+                                                <constraint firstAttribute="trailing" secondItem="GlS-Ez-sTj" secondAttribute="trailing" constant="8" id="PZh-Oa-E5J"/>
+                                                <constraint firstAttribute="bottom" secondItem="pHk-Di-fSF" secondAttribute="bottom" constant="11.5" id="c4J-MN-IKd"/>
+                                                <constraint firstAttribute="bottom" secondItem="GlS-Ez-sTj" secondAttribute="bottom" constant="6.5" id="laK-0o-yaD"/>
+                                                <constraint firstItem="GlS-Ez-sTj" firstAttribute="top" secondItem="YMC-19-P8U" secondAttribute="top" constant="7" id="rSs-Yg-X4U"/>
+                                                <constraint firstItem="pHk-Di-fSF" firstAttribute="top" secondItem="YMC-19-P8U" secondAttribute="top" constant="11" id="rWg-Zt-Rsr"/>
+                                                <constraint firstItem="GlS-Ez-sTj" firstAttribute="leading" secondItem="pHk-Di-fSF" secondAttribute="trailing" constant="8" id="ugS-KB-TJC"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
