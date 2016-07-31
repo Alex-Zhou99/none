@@ -15,7 +15,7 @@ private struct Constants{
     static let cellIdMessageSent = "MessageCellMe"
 }
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITextFieldDelegate {
     
     var roomId: String!
 
@@ -34,6 +34,52 @@ class ChatViewController: UIViewController {
         }
         
     }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChatViewController.showOrHideKeyboard(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChatViewController.showOrHideKeyboard(_:)), name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    func showOrHideKeyboard(notification: NSNotification){
+        if let keyboardInfo: Dictionary = notification.userInfo{
+            if notification.name == UIKeyboardWillShowNotification {
+                UIView.animateWithDuration(1, animations: { () in
+                self.constraintToButton.constant = (keyboardInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue().height
+                self.view.layoutIfNeeded()
+                }) { (completed: Bool) -> Void in
+                    //move to the last message
+                    self.moveTolastMessage()
+                }
+            }else if notification.name == UIKeyboardWillHideNotification {
+                UIView.animateWithDuration(1, animations: { () in
+                    self.constraintToButton.constant = 0
+                    self.view.layoutIfNeeded()
+                }) { (completed: Bool) -> Void in
+                    //move to the last message
+                    self.moveTolastMessage()
+                }
+            }
+        }
+    }
+    func moveTolastMessage(){
+        if self.tableView.contentSize.height > CGRectGetHeight(self.tableView.frame){
+            let contentOfSet = CGPointMake(0, self.tableView.contentSize.height - CGRectGetHeight(self.tableView.frame))
+            self.tableView.setContentOffset(contentOfSet, animated: true)
+        }
+    }
+    
+    @IBOutlet weak var constraintToButton: NSLayoutConstraint!
     
     @IBAction func SendButtonDidTapped(sender: AnyObject) {
         self.chatTextField.resignFirstResponder()
