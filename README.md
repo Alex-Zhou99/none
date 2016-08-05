@@ -5,6 +5,8 @@
 * Built background system based on Firebase to maintain and manage data
 * the contraints have some problems, but the code is great, no problem
 
+![](https://github.com/shi-edward/iMessage-App/blob/master/Project-Image/FuozbAn5S3Zkp1TgTKD3BzLkqsQk-2.png)
+
 ##Requirements
 * Firebase account
 * Mac & Xcode (nonsense word)
@@ -47,7 +49,7 @@ target 'Connection' do
 end
 ```
 
-![](https://github.com/shi-edward/iMessage-App/blob/master/Project-Image/FuozbAn5S3Zkp1TgTKD3BzLkqsQk-2.png)
+
 
 ##Architecture
 
