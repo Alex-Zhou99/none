@@ -67,5 +67,5 @@ end
 
 ##Discusssing
 
-* submit issue(https://github.com/shi-edward/iMessage-App/issues)
+* [submit issue](https://github.com/shi-edward/iMessage-App/issues)
 * email: edwardshi95@gmail.com
