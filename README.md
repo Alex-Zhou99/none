@@ -1,3 +1,5 @@
+![](https://github.com/shi-edward/iMessage-App/tree/master/Project-Image)
+
 # iMessage-IOS-app
 
 * a chat application to communicate with each other
